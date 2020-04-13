@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "Employee_History")
 public class EmployeeHistory {
 
-	@Id
+	@Id 
 	private String employeeId;
 	private String employeeName;
 	private String emailId;

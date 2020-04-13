@@ -39,7 +39,6 @@ public class EmployeeHistoryController {
 		return repository.findByemployeeId(employeeId);
 		
 	}
-	
 	@GetMapping("/getempdate/{dateSubmitted}")
 	public  List<EmployeeHistory> getBydateSubmitted(@PathVariable String dateSubmitted , Sort s){
 		return repository.findBydateSubmitted(dateSubmitted);
