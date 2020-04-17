@@ -19,6 +19,9 @@ public class EmployeeHistory {
 	private String reason;
 	private String approvedByManager;
 	private String dateSubmitted;
+	private String location;
+
+
 
 	public String getEmployeeId() {
 		return employeeId;
@@ -115,5 +118,13 @@ public class EmployeeHistory {
 	public void setDateSubmitted(String dateSubmitted) {
 		this.dateSubmitted = dateSubmitted;
 	}
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
 
 }

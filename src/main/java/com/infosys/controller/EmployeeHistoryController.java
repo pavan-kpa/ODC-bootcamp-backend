@@ -25,7 +25,7 @@ public class EmployeeHistoryController {
 	@PostMapping("/empHistory")
 	public String saveempHistory(@RequestBody EmployeeHistory emp) {
 		repository.save(emp);
-		return "Employee saved with " + emp.getEmployeeId();
+		return "Employee " + emp.getEmployeeName() +  " is saved with id " + emp.getEmployeeId();
 	}
 	
 	@GetMapping("/empHis")
@@ -57,7 +57,7 @@ public class EmployeeHistoryController {
 	@PutMapping("/updatedempHis/{employeeId}")
 	public String updateEmployee(@PathVariable String employeeId, @RequestBody EmployeeHistory emphis) {
 		repository.save(emphis);
-		return "Employee updated with " + emphis.getEmployeeId();
+		return "Employee " + emphis.getEmployeeName() + " updated with " + emphis.getEmployeeId();
 		
 	}
 	
